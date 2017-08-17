@@ -264,10 +264,49 @@
 >
 > 注：需要注意的是，这种排序方式并不保证是稳定排序，但它与浏览器内置的数据排序方法具有相同的行为
 
+#### selection.order | Function
 
+> 入参: 无
+>
+> 描述: 对于所有已经被选择的元素，按照选择集中的顺序重新插入到文档中
+> 
+> 返回值: 与原始选择集相同的 Selection
 
-----
-selection.order - reorders elements in the document to match the selection.
-selection.raise - reorders each element as the last child of its parent.
-selection.lower - reorders each element as the first child of its parent.
-d3.creator - create an element by name.
+#### selection.raise | Function
+
+> 入参: 无
+>
+> 描述: 对于所有已经被选择的元素，重新插入到对应的父元素，每次插入时都作为父元素的最后一个子元素，相当于
+> > ```
+> > selection.each(function(){
+> >   this.parentNode.appendChild(this);
+> > });
+> > ```
+> 
+> 返回值: 与重新插入后的元素顺序相同的 Selection
+
+#### selection.lower | Function
+
+> 入参: 无
+>
+> 描述: 对于所有已经被选择的元素，重新插入到对应的父元素，每次插入时都作为父元素的第一个子元素，相当于
+> > ```
+> > selection.each(function(){
+> >   this.parentNode.insertBefore(this,this.parentNode.firstChild);
+> > });
+> > ```
+> 
+> 返回值: 与重新插入后的元素顺序相同的 Selection
+
+#### d3.creator | Function
+
+> 入参: name，标签名字符串，比如 div，circle 等
+>
+> 描述: 对于给定的 name，返回一个函数，该函数的返回值是一个根据 name 创建好的元素。该方法通常用于在 selection.append 和 selection.insert 函数中使用，比如
+> > ```
+> > selection.append("div");
+> > 等价于
+> > selection.append(d3.creator("div"));
+> > ```
+> 
+> 返回值: Function
