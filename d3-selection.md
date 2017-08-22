@@ -350,12 +350,12 @@
 > > ```
 > 假设 body 最初是空的，运行上述代码后，结果如下
 > > ```
-<div>4</div>
-<div>8</div>
-<div>15</div>
-<div>16</div>
-<div>23</div>
-<div>42</div>
+> > <div>4</div>
+> > <div>8</div>
+> > <div>15</div>
+> > <div>16</div>
+> > <div>23</div>
+> > <div>42</div>
 > > ```
 > 
 > 返回值: 缺失的 Selection
@@ -381,12 +381,12 @@
 > > ```
 > 经过上述一系列代码的运行，结果如下
 > > ```
-<div>1</div>
-<div>2</div>
-<div>4</div>
-<div>8</div>
-<div>16</div>
-<div>32</div>
+> > <div>1</div>
+> > <div>2</div>
+> > <div>4</div>
+> > <div>8</div>
+> > <div>16</div>
+> > <div>32</div>
 > > ```
 > 
 > 返回值: 多余的 Selection
