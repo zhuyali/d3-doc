@@ -342,11 +342,11 @@
 >
 > 描述: 在 selection.data 操作后调用该方法。当数据元素个数大于元素个数时，调用该方法会返回缺失的元素集，所以通常调用该方法的目的就是为了创建缺失的元素，比如根据数组创建 div 元素
 > > ```
-var div = d3.select("body")
-  .selectAll("div")
-  .data([4, 8, 15, 16, 23, 42])
-  .enter().append("div")
-    .text(function(d) { return d; });
+> > var div = d3.select("body")
+> >   .selectAll("div")
+> >  .data([4, 8, 15, 16, 23, 42])
+> >   .enter().append("div")
+> >     .text(function(d) { return d; });
 > > ```
 > 假设 body 最初是空的，运行上述代码后，结果如下
 > > ```
@@ -366,19 +366,19 @@ var div = d3.select("body")
 >
 > 描述: 在 selection.data 操作后调用该方法。当数据元素个数小于元素个数时，调用该方法会返回多余的元素集，所以通常调用该方法的目的就是为了删除缺失的元素，比如根据数组删除多余的 div 元素
 > > 前提条件：已经存在包含数据 4，8，15，16，23，42 的 div 元素
-
+> >
 > > 对 div 重新绑定数据：
-```
+> > ```
 > > div = div.data([1, 2, 4, 8, 16, 32], function(d) { return d; }); 这里使用了 key 方法，选择出 [1, 2, 4, 8, 16, 32] 和 [4, 8, 15, 16, 23, 42] 的交集元素，即带有数据 4，8，16 的元素加入 update 集
-```
+> > ```
 > > 之前的元素不存在 [1, 2, 32]，则作为 enter 集：
-```
+> > ```
 > > div.enter().append("div").text(function(d) { return d; });
-```
+> > ```
 > > 之前的 [15, 23, 42] 没有出现在新的数据中，则作为 exit 集：
-```
+> > ```
 > > div.exit().remove();
-``` 
+> > ```
 > 经过上述一系列代码的运行，结果如下
 > > ```
 <div>1</div>
@@ -400,5 +400,5 @@ var div = d3.select("body")
 > 描述: 如果没有指定 value，则会返回选择集中第一个非空元素绑定的数据。如果指定了 value ，那么会给所有已被选择的元素进行数据绑定
 > 
 > 返回值: 进行完数据绑定的 Selection，即在原始 selection 的基础上变化了 __data__ 属性(可能是添加，减少或修改了 __data__ 属性)
-
+>
 > 注：该方法与 selection.data 完全不同，相较于 selection.data 来说，该方法不关心数据元素和 DOM 元素之间的关系，而只关注于数据绑定
