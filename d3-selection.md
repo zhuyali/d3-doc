@@ -1,5 +1,5 @@
 ### 选择元素
-
+    
 #### d3.selection | Function
 
 > 入参: 无 
@@ -43,7 +43,6 @@
 #### selection.selectAll | Function
 
 > 入参: selector，有两种形式：
->
 > > 1. CSS 选择器
 > > 2. function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点。该函数必须具有返回值，返回值可以是一个元素数组(或伪数组)，如果不存在匹配元素，则返回空数组
 >
@@ -56,7 +55,6 @@
 #### selection.select | Function
 
 > 入参: selector，有两种形式：
->
 > > 1. CSS 选择器
 > > 2. function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点。该函数必须具有返回值，返回值可以是一个元素，如果不存在匹配元素，则返回 null
 >
@@ -310,3 +308,97 @@
 > > ```
 > 
 > 返回值: Function
+
+#### selection.data | Function
+
+> 入参: [data[, key]]
+> > 其中 data 有两种形式
+> > 1. 数组，可以包含任意类型的数据
+> > 2. function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点。该函数必须返回一个数组
+> > 
+> > 其中 key 是一个函数，function (d, i)，其中 d 代表当前数据，i 代表当前索引。默认情况下，data 数组中的第一个数据元素会与第一个被选择的元素绑定，第二个数据元素会与第二个被选择的元素绑定，以此类推。key 方法的存在打破了这种规律，指定了数据元素和 DOM 元素的绑定关系。在不指定 key 函数时，数据元素和元素默认按照索引进行对应，当指定 key 函数后，索引根据 key 函数的返回值而定，即 key 函数会影响节点的索引，当索引改变时，不会自动触发排序，如果需要进行排序，需要手动调用 sort 或 order 函数。key 函数在过程中会被调用两次：一次是由选择集中的元素发起调用，此时 this 是真实的 DOM 节点；一次是 data 数组，此时的 this 是 data 数组。这两次调用返回的数据会进行比较，具有相同返回值的一个元素和一个数据元素会进行数据绑定，然后在最终返回的选择集中加入该元素，该元素在最终选择集中的位置根据其索引的顺序而定。以下是一个使用 key 函数的例子
+> > ```
+> > var data = [
+> >   {name: "Locke", number: 4},
+> >   {name: "Reyes", number: 8},
+> >   {name: "Ford", number: 15},
+> >   {name: "Jarrah", number: 16},
+> >   {name: "Shephard", number: 31},
+> >   {name: "Kwon", number: 34}
+> > ];
+> > d3.selectAll("div")
+> >   //如果之前已经绑定过数据，则 d 是存在的，以 d.name 做索引；否则，以 this.id 做索引
+> >   .data(data, function(d) { return d ? d.name : this.id; })
+> >     .text(function(d) { return d.number; });
+> > ```
+>
+> 描述: 给所有已经被选择的元素绑定数据，返回一个 update 集：成功绑定数据的元素集。同时，由于数据元素和元素个数不一定一致，所以在返回的选择集上还会有 enter 和 exit 操作，详见 selection.enter 和 selection.exit。数据成功绑定后，会存储在 __data__ 属性中。如果没有指定 data，则返回一个数组，数组中依次为当前选择集中的元素绑定的数据
+> 
+> 返回值: 成功绑定数据的 Selection，并且带有 enter 和 exit 操作
+
+#### selection.enter | Function
+
+> 入参: 无
+>
+> 描述: 在 selection.data 操作后调用该方法。当数据元素个数大于元素个数时，调用该方法会返回缺失的元素集，所以通常调用该方法的目的就是为了创建缺失的元素，比如根据数组创建 div 元素
+> > ```
+var div = d3.select("body")
+  .selectAll("div")
+  .data([4, 8, 15, 16, 23, 42])
+  .enter().append("div")
+    .text(function(d) { return d; });
+> > ```
+> 假设 body 最初是空的，运行上述代码后，结果如下
+> > ```
+<div>4</div>
+<div>8</div>
+<div>15</div>
+<div>16</div>
+<div>23</div>
+<div>42</div>
+> > ```
+> 
+> 返回值: 缺失的 Selection
+
+#### selection.exit | Function
+
+> 入参: 无
+>
+> 描述: 在 selection.data 操作后调用该方法。当数据元素个数小于元素个数时，调用该方法会返回多余的元素集，所以通常调用该方法的目的就是为了删除缺失的元素，比如根据数组删除多余的 div 元素
+> > 前提条件：已经存在包含数据 4，8，15，16，23，42 的 div 元素
+
+> > 对 div 重新绑定数据：
+```
+> > div = div.data([1, 2, 4, 8, 16, 32], function(d) { return d; }); 这里使用了 key 方法，选择出 [1, 2, 4, 8, 16, 32] 和 [4, 8, 15, 16, 23, 42] 的交集元素，即带有数据 4，8，16 的元素加入 update 集
+```
+> > 之前的元素不存在 [1, 2, 32]，则作为 enter 集：
+```
+> > div.enter().append("div").text(function(d) { return d; });
+```
+> > 之前的 [15, 23, 42] 没有出现在新的数据中，则作为 exit 集：
+```
+> > div.exit().remove();
+``` 
+> 经过上述一系列代码的运行，结果如下
+> > ```
+<div>1</div>
+<div>2</div>
+<div>4</div>
+<div>8</div>
+<div>16</div>
+<div>32</div>
+> > ```
+> 
+> 返回值: 多余的 Selection
+
+#### selection.datum | Function
+
+> 入参: [value]，有两种形式
+> > 1. value 是一个变量，所有已经被选择的元素都会绑定该 value 数据
+> > 2. value 是一个函数，形式为 function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点。此时，函数的返回值会与当前元素进行数据绑定，如果返回 null，则表示删除当前元素所绑定的数据
+>
+> 描述: 如果没有指定 value，则会返回选择集中第一个非空元素绑定的数据。如果指定了 value ，那么会给所有已被选择的元素进行数据绑定
+> 
+> 返回值: 进行完数据绑定的 Selection，即在原始 selection 的基础上变化了 __data__ 属性(可能是添加，减少或修改了 __data__ 属性)
+
+> 注：该方法与 selection.data 完全不同，相较于 selection.data 来说，该方法不关心数据元素和 DOM 元素之间的关系，而只关注于数据绑定
