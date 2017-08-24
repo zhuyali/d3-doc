@@ -501,7 +501,7 @@
 
 #### selection.call | Function
 
-> 入参: (function[, arguments…])，其中 function 为 function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点
+> 入参: (function[, arguments…])
 >
 > 描述: 调用一次 function 函数。其中 function 函数的第一个参数为当前的 selection，其它参数可选，如下示例
 > ```
