@@ -450,8 +450,34 @@
 
 #### d3.customEvent | Function
 
+> 入参: (event, listener[, that[, arguments]])
+>
+> 描述: 使用特定的 that 上下文和指定的参数 arguments 调用 listener。在调用期间，d3.event 会被设置为指定的 event 对象；在调用结束后，d3.event 会被重置为之前的值
+>
+> 返回值: 取决于 listener 的返回值
+
 #### d3.mouse | Function
+
+> 入参: container
+>
+> 描述: 返回当前事件相对于 container 的 x 和 y 坐标(前提是 d3.event 必须是存在的)，container 可以为 HTML 元素或 SVG 元素，比如 G 元素或者 SVG 元素
+>
+> 返回值: [x, y]
 
 #### d3.touch | Function
 
+> 入参: (container[, touches], identifier)
+>
+> 描述: 返回当前标识符为 identifier 的触摸事件相对于 container 的 x 和 y 坐标(前提是 d3.event 必须是存在的)，container 可以为 HTML 元素或 SVG 元素，比如 G 元素或者 SVG 元素。当未指定 touches 时，touches 默认为当前事件的 changedTouches 属性。如果以 identifier 作为标识符的事件不包含在 touches 中，则返回 null 
+>
+> 返回值: [x, y] 或 null
+
 #### d3.touches | Function
+
+> 入参: (container[, touches])
+>
+> 描述: 返回当前事触摸件相对于 container 的触摸 x 和触摸 y 坐标(前提是 d3.event 必须是存在的)，container 可以为 HTML 元素或 SVG 元素，比如 G 元素或者 SVG 元素，由于触摸可能是多点的，因而返回值为一个二维数组。当未指定 touches 时，touches 默认为当前事件的 touches 属性
+>
+> 返回值: [[x1, y1], [x2, y2], ...]
+
+### 控制流
