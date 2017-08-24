@@ -89,11 +89,13 @@
 > 入参: selector，CSS 选择器
 >
 > 描述: 对于给定的入参 selector，返回一个函数 - 若 this 元素与该选择器匹配，则返回 true；否则，返回 false。该方法通常用于在 selection.filter 函数中使用，比如
-> > ```
-> > var div = selection.filter("div");
-> > 等价于
-> > var div = selection.filter(d3.matcher("div"));
-> > ```
+> ```
+> var div = selection.filter("div");
+> ```
+> 等价于
+> ```
+> var div = selection.filter(d3.matcher("div"));
+> ```
 >
 > 返回值: Function
 
@@ -102,11 +104,13 @@
 > 入参: selector，CSS 选择器
 >
 > 描述: 对于给定的入参 selector，返回一个函数 - 该函数返回 this 元素的第一个与选择器匹配的后代。该方法通常用于在 selection.select 函数中使用，比如
-> > ```
-> > var div = selection.select("div");
-> > 等价于
-> > var div = selection.select(d3.selector("div"));
-> > ```
+> ```
+> var div = selection.select("div");
+> ```
+> 等价于
+> ```
+> var div = selection.select(d3.selector("div"));
+> ```
 >
 > 返回值: Function
 
@@ -115,11 +119,13 @@
 > 入参: selector，CSS 选择器
 >
 > 描述: 对于给定的入参 selector，返回一个函数 - 该函数返回 this 元素的所有与选择器匹配的后代。该方法通常用于在 selection.selectAll 函数中使用，比如
-> > ```
-> > var div = selection.selectAll("div");
-> > 等价于
-> > var div = selection.selectAll(d3.selectAll("div"));
-> > ```
+> ```
+> var div = selection.selectAll("div");
+> ```
+> 等价于
+> ```
+> var div = selection.selectAll(d3.selectAll("div"));
+> ```
 >
 > 返回值: Function
 
@@ -275,11 +281,11 @@
 > 入参: 无
 >
 > 描述: 对于所有已经被选择的元素，重新插入到对应的父元素，每次插入时都作为父元素的最后一个子元素，相当于
-> > ```
-> > selection.each(function(){
-> >   this.parentNode.appendChild(this);
-> > });
-> > ```
+> ```
+> selection.each(function(){
+>   this.parentNode.appendChild(this);
+> });
+> ```
 > 
 > 返回值: 与重新插入后的元素顺序相同的 Selection
 
@@ -288,11 +294,11 @@
 > 入参: 无
 >
 > 描述: 对于所有已经被选择的元素，重新插入到对应的父元素，每次插入时都作为父元素的第一个子元素，相当于
-> > ```
-> > selection.each(function(){
-> >   this.parentNode.insertBefore(this,this.parentNode.firstChild);
-> > });
-> > ```
+> ```
+> selection.each(function(){
+>   this.parentNode.insertBefore(this,this.parentNode.firstChild);
+> });
+> ```
 > 
 > 返回值: 与重新插入后的元素顺序相同的 Selection
 
@@ -301,11 +307,13 @@
 > 入参: name，标签名字符串，比如 div，circle 等
 >
 > 描述: 对于给定的 name，返回一个函数，该函数的返回值是一个根据 name 创建好的元素。该方法通常用于在 selection.append 和 selection.insert 函数中使用，比如
-> > ```
-> > selection.append("div");
-> > 等价于
-> > selection.append(d3.creator("div"));
-> > ```
+> ```
+> selection.append("div");
+> ```
+> 等价于
+> ```
+> selection.append(d3.creator("div"));
+> ```
 > 
 > 返回值: Function
 
@@ -343,22 +351,22 @@
 > 入参: 无
 >
 > 描述: 在 selection.data 操作后调用该方法。当数据元素个数大于元素个数时，调用该方法会返回缺失的元素集，所以通常调用该方法的目的就是为了创建缺失的元素，比如根据数组创建 div 元素
-> > ```
-> > var div = d3.select("body")
-> >   .selectAll("div")
-> >  .data([4, 8, 15, 16, 23, 42])
-> >   .enter().append("div")
-> >     .text(function(d) { return d; });
-> > ```
+> ```
+> var div = d3.select("body")
+>   .selectAll("div")
+>   .data([4, 8, 15, 16, 23, 42])
+>   .enter().append("div")
+>     .text(function(d) { return d; });
+> ```
 > 假设 body 最初是空的，运行上述代码后，结果如下
-> > ```
-> > <div>4</div>
-> > <div>8</div>
-> > <div>15</div>
-> > <div>16</div>
-> > <div>23</div>
-> > <div>42</div>
-> > ```
+> ```
+> <div>4</div>
+> <div>8</div>
+> <div>15</div>
+> <div>16</div>
+> <div>23</div>
+> <div>42</div>
+> ```
 > 
 > 返回值: 缺失的 Selection
 
@@ -367,29 +375,30 @@
 > 入参: 无
 >
 > 描述: 在 selection.data 操作后调用该方法。当数据元素个数小于元素个数时，调用该方法会返回多余的元素集，所以通常调用该方法的目的就是为了删除缺失的元素，比如根据数组删除多余的 div 元素
-> > 前提条件：已经存在包含数据 4, 8, 15, 16, 23, 42 的 div 元素
-> >
-> > 对 div 重新绑定数据：
-> > ```
-> > div = div.data([1, 2, 4, 8, 16, 32], function(d) { return d; }); 这里使用了 key 方法，选择出 [1, 2, 4, 8, 16, 32] 和 [4, 8, 15, 16, 23, 42] 的交集元素，即带有数据 4, 8, 16 的元素加入 update 集
-> > ```
-> > 之前的元素不存在 [1, 2, 32]，则作为 enter 集：
-> > ```
-> > div.enter().append("div").text(function(d) { return d; });
-> > ```
-> > 之前的 [15, 23, 42] 没有出现在新的数据中，则作为 exit 集：
-> > ```
-> > div.exit().remove();
-> > ```
+>
+> 前提条件：已经存在包含数据 4, 8, 15, 16, 23, 42 的 div 元素
+>
+> 对 div 重新绑定数据：
+> ```
+> div = div.data([1, 2, 4, 8, 16, 32], function(d) { return d; }); 这里使用了 key 方法，选择出 [1, 2, 4, 8, 16, 32] 和 [4, 8, 15, 16, 23, 42] 的交集元素，即带有数据 4, 8, 16 的元素加入 update 集
+> ```
+> 之前的元素不存在 [1, 2, 32]，则作为 enter 集：
+> ```
+> div.enter().append("div").text(function(d) { return d; });
+> ```
+> 之前的 [15, 23, 42] 没有出现在新的数据中，则作为 exit 集：
+> ```
+> div.exit().remove();
+> ```
 > 经过上述一系列代码的运行，结果如下
-> > ```
-> > <div>1</div>
-> > <div>2</div>
-> > <div>4</div>
-> > <div>8</div>
-> > <div>16</div>
-> > <div>32</div>
-> > ```
+> ```
+> <div>1</div>
+> <div>2</div>
+> <div>4</div>
+> <div>8</div>
+> <div>16</div>
+> <div>32</div>
+> ```
 >
 > 返回值: 多余的 Selection
 
@@ -464,7 +473,7 @@
 >
 > 返回值: [x, y]
 
-#### d3.touch | Function
+#### d3.touch | Function --待检查
 
 > 入参: (container[, touches], identifier)
 >
@@ -472,12 +481,141 @@
 >
 > 返回值: [x, y] 或 null
 
-#### d3.touches | Function
+#### d3.touches | Function --待检查
 
 > 入参: (container[, touches])
 >
-> 描述: 返回当前事触摸件相对于 container 的触摸 x 和触摸 y 坐标(前提是 d3.event 必须是存在的)，container 可以为 HTML 元素或 SVG 元素，比如 G 元素或者 SVG 元素，由于触摸可能是多点的，因而返回值为一个二维数组。当未指定 touches 时，touches 默认为当前事件的 touches 属性
+> 描述: 返回当前触摸事件相对于 container 的触摸 x 和触摸 y 坐标(前提是 d3.event 必须是存在的)，container 可以为 HTML 元素或 SVG 元素，比如 G 元素或者 SVG 元素，由于触摸可能是多点的，因而返回值为一个二维数组。当未指定 touches 时，touches 默认为当前事件的 touches 属性
 >
 > 返回值: [[x1, y1], [x2, y2], ...]
 
 ### 控制流
+
+#### selection.each | Function
+
+> 入参: function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点
+>
+> 描述: 给当前已经选择的每个元素都调用一次 function 函数
+>
+> 返回值: Selection
+
+#### selection.call | Function
+
+> 入参: (function[, arguments…])，其中 function 为 function (d, i, nodes) {}，其中 d 代表当前数据，i 代表当前索引，nodes 代表当前已经被选择的元素集。this 代表当前元素对应的真实 DOM 节点
+>
+> 描述: 调用一次 function 函数。其中 function 函数的第一个参数为当前的 selection，其它参数可选，如下示例
+> ```
+> function name(selection, first, last) {
+>   selection
+>   .attr("first-name", first)
+>   .attr("last-name", last);
+> d3.selectAll("div").call(name, "John", "Snow");
+> ```
+> 等价于
+> ```
+> name(d3.selectAll("div"), "John", "Snow");
+> ```
+>
+> 返回值: Selection
+
+#### selection.empty | Function
+
+> 入参: 无
+>
+> 描述: 当当前选择集中没有(非空)元素时，返回 true；否则，返回 false
+>
+> 返回值: Boolean
+
+#### selection.nodes | Function
+
+> 入参: 无
+>
+> 描述: 返回一个数组，数组中包含当前选择集中的所有非空元素
+>
+> 返回值: Array
+
+#### selection.node | Function
+
+> 入参: 无
+>
+> 描述: 返回当前选择集中的第一个非空元素，如果选择集为空，则返回 null
+>
+> 返回值: Node
+
+#### selection.size | Function
+
+> 入参: 无
+>
+> 描述: 返回选择集中的元素个数
+>
+> 返回值: Number
+
+### 本地变量
+
+#### d3.local | Function
+
+> 入参: 无
+>
+> 描述: 声明一个本地变量
+>
+> 返回值: Object(本地变量)
+
+#### local.set | Function
+
+> 入参: node, value
+>
+> 描述: 设置本地变量的值。设置指定 node 的值为 value，并返回 value。这通常配合 selection.each 使用
+> ```
+> selection.each(function(d) { foo.set(this, d.value); });
+> ```
+> 如果仅仅要给单一变量设值，可以考虑使用
+> ```
+> selection.property(foo, function(d) { return d.value; });
+> ```
+
+#### local.get | Function
+
+> 入参: node
+>
+> 描述: 返回该本地变量在指定 node 上的值，如果该本地变量上没有指定当前 node 的值，则会上溯其祖先元素，直至找到有值的祖先元素；否则，返回 undefined
+
+#### local.remove | Function
+
+> 入参: node
+>
+> 描述: 删除该本地变量在指定 node 上的值。如果该本地变量上指定了当前 node 的值，返回 true；否则，返回 false。与 local.get 不同，该函数不会上溯到祖先元素
+>
+> 返回值: Boolean
+
+#### local.toString | Function
+
+> 入参: 无
+>
+> 描述: 返回自动生成的本地变量标识符。该标识符会以变量的形式存储在 DOM 元素中，并且可以通过 ```element[local]``` 或 ```selection.property``` 来进行获取。这里的 element 为 DOM 元素，local 为本地变量名称
+> 
+> 返回值: String
+
+### 命名空间
+
+#### d3.namespace | Function
+
+> 入参: name，有两种形式
+> > 1. 包含了冒号(:)，则冒号之前的子串作为命名空间前缀，且该前缀必须在 d3.namespaces 中注册。如果已注册，那么返回一个对象类似于 ```{space: "http://www.w3.org/2000/svg", local: "text"}```；否则，返回只冒号后的子串
+> > 2. 不包含冒号(:)，则直接返回 name
+>
+> 描述: name 中若包含命名空间前缀且该前缀已注册，则返回一个对象；若该前缀未注册，则返回不包含前缀的部分，比如```d3.namespace('xxx:name')```的返回结果为```name```，原因是 xxx 不包含在 d3.namespaces 列表中。name 中若不包含命名空间前缀，则直接返回
+> 
+> 返回值: Object 或 String
+
+#### d3.namespaces | Attribute
+
+> 返回注册的命名空间前缀，初始值为
+> ```
+> {
+>   svg: "http://www.w3.org/2000/svg",
+>   xhtml: "http://www.w3.org/1999/xhtml",
+>   xlink: "http://www.w3.org/1999/xlink",
+>   xml: "http://www.w3.org/XML/1998/namespace",
+>   xmlns: "http://www.w3.org/2000/xmlns/"
+> }
+> ```
