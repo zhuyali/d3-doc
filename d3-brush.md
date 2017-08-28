@@ -30,7 +30,7 @@ d3-brush 的实现是基于 SVG 的鼠标或触摸事件。在刷选区域里进
 
 > 入参: group
 >
-> 描述: 为指定的 group 应用 brush，group 必须是一个 selection 或 SVG G 元素。该方法通常不直接调用，而是通过 selection.call 来进行调用，例如
+> 描述: 为指定的 group 应用 brush，group 必须是一个 selection 或 SVG G 元素。一般会使用 selection.call 来代替该方法来完成相同的功能，例如
 > ```
 > svg.append("g")
 >   .attr("class", "brush")
