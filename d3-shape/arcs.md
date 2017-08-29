@@ -41,8 +41,8 @@
 >
 > 描述: 根据给定的参数，计算圆弧的中心点。计算方法为：角度偏移为 (startAngle + endAngle) / 2，距离内部半径距离为 (innerRadius + outerRadius) / 2。如下两图
 >
-> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/centroid-circular-sector.png" style="width: 200px!important; height: 200px!important"/>
-> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/centroid-annular-sector.png" style="width: 200px!important; height: 200px!important"/>
+> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/centroid-circular-sector.png" width="220" height="220"/>
+> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/centroid-annular-sector.png" width="220" height="220"/>
 >
 > 返回值: Array
 
@@ -88,8 +88,8 @@
 > ```
 > 如果边角半径大于 0，那么弧形的边角呈现出的弯曲角度是以该半径画圆而产生的。如下两图，左图为扇形拼成的圆形，每个扇形有两个边角；右图为扇环拼成的圆环，每个扇环有四个边角
 >
-> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/rounded-circular-sector.png" style="width: 200px!important; height: 200px!important"/>
-> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/rounded-annular-sector.png" style="width: 200px!important; height: 200px!important"/>
+> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/rounded-circular-sector.png" width="220" height="220"/>
+> <img src="https://raw.githubusercontent.com/d3/d3-shape/master/img/rounded-annular-sector.png" width="220" height="220"/>
 >
 > 返回值: Function(但是根据有无传参，返回的函数意义是不同的(arc 生成器或外部半径存取器))
 >
