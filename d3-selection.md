@@ -473,7 +473,7 @@
 >
 > 返回值: [x, y]
 
-#### d3.touch | Function --待检查
+#### d3.touch | Function --待验证
 
 > 入参: (container[, touches], identifier)
 >
@@ -481,7 +481,7 @@
 >
 > 返回值: [x, y] 或 null
 
-#### d3.touches | Function --待检查
+#### d3.touches | Function --待验证
 
 > 入参: (container[, touches])
 >
