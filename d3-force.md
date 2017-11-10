@@ -251,7 +251,7 @@ function force(alpha) {
 > > ```
 > > source - link 的源节点
 > > target - link 的目标节点
-> > index - 索引
+> > index - 索引，无需用户手动设置
 > > ```
 > 为方便起见，link 的源节点和目标节点可以由一个数字或者字符串指定而不是一个节点对象，可以参照 ```link.id``` 来决定用什么来表示源节点和目标节点。当进行 ```force.initialize(nodes)```时，这里的源节点和目标节点会被替换成相应的节点对象
 >
