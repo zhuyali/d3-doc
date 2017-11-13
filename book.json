@@ -2,7 +2,7 @@
   "gitbook": "*",
   "title": "d3-doc",
   "author": "zhuyali",
-  "language": "zh-cn",
+  "language": "zh-hans",
   "plugins" : [
     "anchors",
     "expandable-chapters"
