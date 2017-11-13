@@ -1,0 +1,2576 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>d3-pie · d3-doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhuyali">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pie.html" />
+    
+    
+    <link rel="prev" href="arc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html">
+            
+                    
+                    d3-selection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#选择元素">
+            
+                    
+                    选择元素
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3selection--function">
+            
+                    
+                    d3.selection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3selectall--function">
+            
+                    
+                    d3.selectAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3select--function">
+            
+                    
+                    d3.select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionselectall--function">
+            
+                    
+                    selection.selectAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionselect--function">
+            
+                    
+                    selection.select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionfilter--function">
+            
+                    
+                    selection.filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionmerge--function">
+            
+                    
+                    selection.merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3matcher--function">
+            
+                    
+                    d3.matcher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3selector--function">
+            
+                    
+                    d3.selector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3selectorall--function">
+            
+                    
+                    d3.selectorAll
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3window--function">
+            
+                    
+                    d3.window
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3style--function">
+            
+                    
+                    d3.style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionattr--function">
+            
+                    
+                    selection.attr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionclassed--function">
+            
+                    
+                    selection.classed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionstyle--function">
+            
+                    
+                    selection.style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.16" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionproperty--function">
+            
+                    
+                    selection.property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.17" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectiontext--function">
+            
+                    
+                    selection.text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.18" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionhtml--function">
+            
+                    
+                    selection.html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.19" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionappend--function">
+            
+                    
+                    selection.append
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.20" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectioninsert--function">
+            
+                    
+                    selection.insert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.21" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionremove--function">
+            
+                    
+                    selection.remove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.22" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionsort--function">
+            
+                    
+                    selection.sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.23" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionorder--function">
+            
+                    
+                    selection.order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.24" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionraise--function">
+            
+                    
+                    selection.raise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.25" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionlower--function">
+            
+                    
+                    selection.lower
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.26" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3creator--function">
+            
+                    
+                    d3.creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.27" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectiondata--function">
+            
+                    
+                    selection.data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.28" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionenter--function">
+            
+                    
+                    selection.enter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.29" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionexit--function">
+            
+                    
+                    selection.exit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.30" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectiondatum--function">
+            
+                    
+                    selection.datum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#事件处理">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionon--function">
+            
+                    
+                    selection.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectiondispatch--function">
+            
+                    
+                    selection.dispatch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3event--function">
+            
+                    
+                    d3.event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3customevent--function">
+            
+                    
+                    d3.customEvent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3mouse--function">
+            
+                    
+                    d3.mouse
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3touch--function">
+            
+                    
+                    d3.touch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3touches--function">
+            
+                    
+                    d3.touches
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#控制流">
+            
+                    
+                    控制流
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectioneach--function">
+            
+                    
+                    selection.each
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectioncall--function">
+            
+                    
+                    selection.call
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionempty--function">
+            
+                    
+                    selection.empty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionnodes--function">
+            
+                    
+                    selection.nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionnode--function">
+            
+                    
+                    selection.node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#selectionsize--function">
+            
+                    
+                    selection.size
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#本地变量">
+            
+                    
+                    本地变量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3local--function">
+            
+                    
+                    d3.local
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#localset--function">
+            
+                    
+                    local.set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#localget--function">
+            
+                    
+                    local.get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#localremove--function">
+            
+                    
+                    local.remove
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#localtostring--function">
+            
+                    
+                    local.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#命名空间">
+            
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3namespace--function">
+            
+                    
+                    d3.namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../d3-selection.html">
+            
+                <a href="../d3-selection.html#d3namespaces--attribute">
+            
+                    
+                    d3.namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html">
+            
+                    
+                    d3-path
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#d3path--function">
+            
+                    
+                    d3.path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathmoveto--function">
+            
+                    
+                    path.moveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathclosepath--function">
+            
+                    
+                    path.closePath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathlineto--function">
+            
+                    
+                    path.lineTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathquadraticcurveto--function">
+            
+                    
+                    path.quadraticCurveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathbeziercurveto--function">
+            
+                    
+                    path.bezierCurveTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#patharcto--function">
+            
+                    
+                    path.arcTo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#patharc--function">
+            
+                    
+                    path.arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathrect--function">
+            
+                    
+                    path.rect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../d3-path.html">
+            
+                <a href="../d3-path.html#pathtostring--function">
+            
+                    
+                    path.toString
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html">
+            
+                    
+                    d3-drag
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#d3drag--function">
+            
+                    
+                    d3.drag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#drag--function">
+            
+                    
+                    drag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragcontainer--function">
+            
+                    
+                    drag.container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragfilter--function">
+            
+                    
+                    drag.filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragsubject--function">
+            
+                    
+                    drag.subject
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragclickdistance--function">
+            
+                    
+                    drag.clickDistance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragon--function">
+            
+                    
+                    drag.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragdragdisable--function">
+            
+                    
+                    drag.dragDisable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../d3-drag.html">
+            
+                <a href="../d3-drag.html#dragdragenable--function">
+            
+                    
+                    drag.dragEnable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html">
+            
+                    
+                    d3-force
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulation">
+            
+                    
+                    仿真
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcesimulation--function">
+            
+                    
+                    d3.forceSimulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationrestart--function">
+            
+                    
+                    simulation.restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationstop--function">
+            
+                    
+                    simulation.stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationtick--function">
+            
+                    
+                    simulation.tick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationnodes--function">
+            
+                    
+                    simulation.nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationalpha--function">
+            
+                    
+                    simulation.alpha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.7" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationalphamin--function">
+            
+                    
+                    simulation.alphaMin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.8" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationalphadecay--function">
+            
+                    
+                    simulation.alphaDecay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.9" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationalphatarget--function">
+            
+                    
+                    simulation.alphaTarget
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.10" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationvelocitydecay--function">
+            
+                    
+                    simulation.velocityDecay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.11" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationforce--function">
+            
+                    
+                    simulation.force
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.12" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationfind--function">
+            
+                    
+                    simulation.find
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.13" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#simulationon--function">
+            
+                    
+                    simulation.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#force">
+            
+                    
+                    力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#force--function">
+            
+                    
+                    force
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#forceinitialize--function">
+            
+                    
+                    force.initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#centering">
+            
+                    
+                    向心力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.3.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcecenter--function">
+            
+                    
+                    d3.forceCenter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#centerx--function">
+            
+                    
+                    center.x
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#centery--function">
+            
+                    
+                    center.y
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#collision">
+            
+                    
+                    碰撞力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.4.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcecollide--function">
+            
+                    
+                    d3.forceCollide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#collideradius--function">
+            
+                    
+                    collide.radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#collidestrength--function">
+            
+                    
+                    collide.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#collideiterations--function">
+            
+                    
+                    collide.iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#links">
+            
+                    
+                    连接力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.5.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcelink--function">
+            
+                    
+                    d3.forceLink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#linklinks--function">
+            
+                    
+                    link.links
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#linkid--function">
+            
+                    
+                    link.id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#linkdistance--function">
+            
+                    
+                    link.distance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#linkstrength--function">
+            
+                    
+                    link.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.6" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#linkiterations--function">
+            
+                    
+                    link.iterations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#many-body">
+            
+                    
+                    Many-Body
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.6.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcemanybody--function">
+            
+                    
+                    d3.forceManyBody
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#manybodystrength--function">
+            
+                    
+                    manyBody.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#manybodytheta--function">
+            
+                    
+                    manyBody.theta
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#manybodydistancemin--function">
+            
+                    
+                    manyBody.distanceMin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#manybodydistancemax--function">
+            
+                    
+                    manyBody.distanceMax
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#positioning">
+            
+                    
+                    位置力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.7.1" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcex--function">
+            
+                    
+                    d3.forceX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.2" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#xstrength--function">
+            
+                    
+                    x.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.3" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#xx--function">
+            
+                    
+                    x.x
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.4" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forcey--function">
+            
+                    
+                    d3.forceY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.5" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#ystrength--function">
+            
+                    
+                    y.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.6" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#yy--function">
+            
+                    
+                    y.y
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.7" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#d3forceradial--function">
+            
+                    
+                    d3.forceRadial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.8" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#radialstrength--function">
+            
+                    
+                    radial.strength
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.9" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#radialradius--function">
+            
+                    
+                    radial.radius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.10" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#radialx--function">
+            
+                    
+                    radial.x
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7.11" data-path="../d3-force.html">
+            
+                <a href="../d3-force.html#radialy--function">
+            
+                    
+                    radial.y
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html">
+            
+                    
+                    d3-brush
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#d3brush--function">
+            
+                    
+                    d3.brush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#d3brushx--function">
+            
+                    
+                    d3.brushX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#d3brushy--function">
+            
+                    
+                    d3.brushY
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brush--function">
+            
+                    
+                    brush
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brushmove--function">
+            
+                    
+                    brush.move
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brushextent--function">
+            
+                    
+                    brush.extent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brushfilter--function">
+            
+                    
+                    brush.filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brushhandlesize--function">
+            
+                    
+                    brush.handleSize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brushon--function">
+            
+                    
+                    brush.on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#d3brushselection--function">
+            
+                    
+                    d3.brushSelection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../d3-brush.html">
+            
+                <a href="../d3-brush.html#brush-事件">
+            
+                    
+                    brush事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    d3-shape
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="arc.html">
+            
+                <a href="arc.html">
+            
+                    
+                    d3-arc
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="arc.html">
+            
+                <a href="arc.html#d3arc--function">
+            
+                    
+                    d3.arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="arc.html">
+            
+                <a href="arc.html#arc--function">
+            
+                    
+                    arc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="arc.html">
+            
+                <a href="arc.html#arccentroid--function">
+            
+                    
+                    arc.centroid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="arc.html">
+            
+                <a href="arc.html#arcinnerradius--function">
+            
+                    
+                    arc.innerRadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="arc.html">
+            
+                <a href="arc.html#arcouterradius--function">
+            
+                    
+                    arc.outerRadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.6" data-path="arc.html">
+            
+                <a href="arc.html#arccornerradius--function">
+            
+                    
+                    arc.cornerRadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.7" data-path="arc.html">
+            
+                <a href="arc.html#arcstartangle--function">
+            
+                    
+                    arc.startAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.8" data-path="arc.html">
+            
+                <a href="arc.html#arcendangle--function">
+            
+                    
+                    arc.endAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.9" data-path="arc.html">
+            
+                <a href="arc.html#arcpadangle--function">
+            
+                    
+                    arc.padAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.10" data-path="arc.html">
+            
+                <a href="arc.html#arcpadradius--function">
+            
+                    
+                    arc.padRadius
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.11" data-path="arc.html">
+            
+                <a href="arc.html#arccontext--function">
+            
+                    
+                    arc.context
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="pie.html">
+            
+                <a href="pie.html">
+            
+                    
+                    d3-pie
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="pie.html">
+            
+                <a href="pie.html#d3pie--function">
+            
+                    
+                    d3.pie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="pie.html">
+            
+                <a href="pie.html#pie--function">
+            
+                    
+                    pie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="pie.html">
+            
+                <a href="pie.html#pievalue--function">
+            
+                    
+                    pie.value
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="pie.html">
+            
+                <a href="pie.html#piesort--function">
+            
+                    
+                    pie.sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="pie.html">
+            
+                <a href="pie.html#piesortvalues--function">
+            
+                    
+                    pie.sortValues
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="pie.html">
+            
+                <a href="pie.html#piestartangle--function">
+            
+                    
+                    pie.startAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="pie.html">
+            
+                <a href="pie.html#pieendangle--function">
+            
+                    
+                    pie.endAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="pie.html">
+            
+                <a href="pie.html#piepadangle--function">
+            
+                    
+                    pie.padAngle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >d3-pie</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>pie &#x751F;&#x6210;&#x5668;&#x5E76;&#x4E0D;&#x76F4;&#x63A5;&#x751F;&#x6210;&#x56FE;&#x5F62;&#xFF0C;&#x800C;&#x662F;&#x8BA1;&#x7B97;&#x51FA;&#x4E00;&#x7EC4;&#x80FD;&#x591F;&#x4EE3;&#x8868;&#x5706;&#x5F62;&#x6216;&#x73AF;&#x5F62;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4F20;&#x5165; arc &#x751F;&#x6210;&#x5668;</p>
+<h4 id="d3pie--function"><a name="d3pie--function" class="plugin-anchor" href="#d3pie--function"><i class="fa fa-link" aria-hidden="true"></i></a>d3.pie | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: &#x65E0;</p>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x521B;&#x5EFA;&#x4E00;&#x4E2A; pie &#x751F;&#x6210;&#x5668;</p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: <em>pie</em></p>
+<h4 id="pie--function----arguments-&#x5F85;&#x9A8C;&#x8BC1;"><a name="pie--function----arguments-&#x5F85;&#x9A8C;&#x8BC1;" class="plugin-anchor" href="#pie--function----arguments-&#x5F85;&#x9A8C;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em> | Function  --arguments &#x5F85;&#x9A8C;&#x8BC1;</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: (data[, arguments&#x2026;])&#xFF0C;&#x5176;&#x4E2D; data &#x4E3A;&#x6570;&#x7EC4;&#xFF0C;arguments &#x7684;&#x4F5C;&#x7528;&#x6682;&#x65F6;&#x672A;&#x77E5;</p>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x7EC4;&#x5E26;&#x6709;&#x89D2;&#x5EA6;&#x4FE1;&#x606F;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#xFF0C;&#x4E0E;&#x7ED9;&#x5B9A;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x4E00;&#x81F4;&#x3002;&#x5728;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x7684;&#x5C5E;&#x6027;</p>
+<ul>
+<li><code>data</code> - &#x5BF9;&#x5E94;&#x4E8E;&#x7ED9;&#x5B9A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;</li>
+<li><code>value</code> - &#x5F53;&#x524D;&#x5F27;&#x6BB5;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x503C;</li>
+<li><code>index</code> - &#x7D22;&#x5F15;</li>
+<li><code>startAngle</code> - &#x5F53;&#x524D;&#x5F27;&#x6BB5;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;</li>
+<li><code>endAngle</code> - &#x5F53;&#x524D;&#x5F27;&#x6BB5;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;</li>
+<li><code>padAngle</code> - &#x5F53;&#x524D;&#x5F27;&#x6BB5;&#x7684;&#x95F4;&#x9694;&#x89D2;&#x5EA6;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x6570;&#x7EC4;&#x4F20;&#x7ED9; pie &#x751F;&#x6210;&#x5668;</p>
+<pre><code>var data = [1, 1, 2, 3, 5, 8, 13, 21];
+var arcs = d3.pie()(data);
+</code></pre><p>&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x4E2D;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x5305;&#x542B;&#x4E0A;&#x8FF0;&#x5C5E;&#x6027;</p>
+<pre><code>[
+  {&quot;data&quot;:  1, &quot;value&quot;:  1, &quot;index&quot;: 6, &quot;startAngle&quot;: 6.050474740247008, &quot;endAngle&quot;: 6.166830023713296, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;:  1, &quot;value&quot;:  1, &quot;index&quot;: 7, &quot;startAngle&quot;: 6.166830023713296, &quot;endAngle&quot;: 6.283185307179584, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;:  2, &quot;value&quot;:  2, &quot;index&quot;: 5, &quot;startAngle&quot;: 5.817764173314431, &quot;endAngle&quot;: 6.050474740247008, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;:  3, &quot;value&quot;:  3, &quot;index&quot;: 4, &quot;startAngle&quot;: 5.468698322915565, &quot;endAngle&quot;: 5.817764173314431, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;:  5, &quot;value&quot;:  5, &quot;index&quot;: 3, &quot;startAngle&quot;: 4.886921905584122, &quot;endAngle&quot;: 5.468698322915565, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;:  8, &quot;value&quot;:  8, &quot;index&quot;: 2, &quot;startAngle&quot;: 3.956079637853813, &quot;endAngle&quot;: 4.886921905584122, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;: 13, &quot;value&quot;: 13, &quot;index&quot;: 1, &quot;startAngle&quot;: 2.443460952792061, &quot;endAngle&quot;: 3.956079637853813, &quot;padAngle&quot;: 0},
+  {&quot;data&quot;: 21, &quot;value&quot;: 21, &quot;index&quot;: 0, &quot;startAngle&quot;: 0.000000000000000, &quot;endAngle&quot;: 2.443460952792061, &quot;padAngle&quot;: 0}
+]
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: &#x65E0;</p>
+<p><strong>&#x6CE8;</strong>: &#x5728;&#x4E0A;&#x8FF0;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x4E0E;&#x4F20;&#x5165;&#x7684;&#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x4F46;&#x662F;&#x6392;&#x5E8F;&#x65B9;&#x6CD5;&#x662F;&#x964D;&#x5E8F;&#x7684;&#xFF0C;&#x5373;&#x5148;&#x7ED8;&#x5236;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6570;&#x636E;&#xFF0C;value &#x503C;&#x4E3A; 21 &#x7684;&#x6570;&#x636E;&#x4F1A;&#x5728;&#x89D2;&#x5EA6; 0 &#x7684;&#x5730;&#x65B9;(12 &#x70B9;&#x949F;&#x65B9;&#x5411;)&#x5F00;&#x59CB;&#x7ED8;&#x5236;</p>
+<h4 id="pievalue--function"><a name="pievalue--function" class="plugin-anchor" href="#pievalue--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.value | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [value]&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;</p>
+<ol>
+<li>Number</li>
+<li>function (d, i, data) {}&#xFF0C;&#x5176;&#x4E2D; d &#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7684;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#xFF0C;i &#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7D22;&#x5F15;&#xFF0C;data &#x4EE3;&#x8868;&#x5F53;&#x524D;&#x7684;&#x6570;&#x7EC4;&#x3002;</li>
+</ol>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; value&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x5F53;&#x524D;&#x5F27;&#x6BB5;&#x7684;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x4E3A; value&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; value&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;</p>
+<pre><code>function value(d) {
+  return d;
+}
+</code></pre><p>&#x5F53; pie &#x751F;&#x6210;&#x5668;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x4F20;&#x5165;&#x7684;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x4E00;&#x6B21; value &#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x3002;&#x7531;&#x4E0A;&#x9762;&#x9ED8;&#x8BA4;&#x7684;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x5047;&#x5B9A;&#x4F20;&#x5165;&#x7684;&#x6570;&#x7EC4;&#x4E3A;&#x6570;&#x503C;&#x6570;&#x7EC4;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; valueOf &#x8F6C;&#x5316;&#x6210;&#x6570;&#x503C;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x6570;&#x7EC4;&#x4E0D;&#x662F;&#x7EAF;&#x7CB9;&#x7684;&#x6570;&#x503C;&#x6570;&#x7EC4;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x6240;&#x751F;&#x6210;&#x7684;&#x5404;&#x4E2A;&#x5F27;&#x6BB5;&#x7684; value &#x503C;&#x4E3A; NaN&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x503C;&#x8BBF;&#x95EE;&#x5668;&#x6765;&#x8FBE;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#x3002;&#x5982;&#x4E0B;</p>
+<pre><code>var data = [
+  {&quot;number&quot;:  4, &quot;name&quot;: &quot;Locke&quot;},
+  {&quot;number&quot;:  8, &quot;name&quot;: &quot;Reyes&quot;},
+  {&quot;number&quot;: 15, &quot;name&quot;: &quot;Ford&quot;},
+  {&quot;number&quot;: 16, &quot;name&quot;: &quot;Jarrah&quot;},
+  {&quot;number&quot;: 23, &quot;name&quot;: &quot;Shephard&quot;},
+  {&quot;number&quot;: 42, &quot;name&quot;: &quot;Kwon&quot;}
+];
+
+var arcs = d3.pie()
+    .value(function(d) { return d.number; })
+    (data);
+</code></pre><p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E2A;&#x5F27;&#x6BB5;&#x7684; value &#x503C;</p>
+<pre><code>var arcs = d3.pie()(data.map(function(d) { return d.number; }));
+</code></pre><p>&#x4F46;&#x662F;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F1A;&#x4F7F;&#x5F97;&#x5404;&#x4E2A;&#x5F27;&#x6BB5;&#x7684; data &#x503C;&#x4E5F;&#x53D8;&#x6210; d.number &#x800C;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x7531;&#x6B64;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F70;&#x663E;&#x51FA;<code>*pie*.value</code>&#x7684;&#x610F;&#x4E49;&#x4E86;&#xFF1A;&#x5B83;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x5BF9;&#x8C61;&#x6765;&#x643A;&#x5E26;&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#x6216;&#x6587;&#x672C;&#x6807;&#x7B7E;&#x7B49;</p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x503C;&#x8BBF;&#x95EE;&#x5668;))</p>
+<h4 id="piesort--function"><a name="piesort--function" class="plugin-anchor" href="#piesort--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.sort | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [compare]&#xFF0C;&#x5F62;&#x5F0F;&#x4E3A; <code>function(a, b) {}</code>&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x6570;&#x5B57;&#x3002;&#x5176;&#x4E2D; a &#x548C; b &#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E; <code>*pie*</code> &#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x7684; data &#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E00;&#x81F4;&#x3002;&#x5982;&#x679C; a &#x8981;&#x5728; b &#x524D;&#x9762;&#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x8981;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5C0F;&#x4E8E; 0 &#x7684;&#x6570;&#x5B57;&#xFF1B;&#x5982;&#x679C; a &#x8981;&#x5728; b &#x540E;&#x9762;&#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x8981;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5927;&#x4E8E; 0 &#x7684;&#x6570;&#x5B57;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; 0&#xFF0C;&#x5219;&#x65E0;&#x6240;&#x8C13; a &#x548C; b &#x7684;&#x987A;&#x5E8F;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6839;&#x636E;&#x6570;&#x636E;&#x7684;&#x540D;&#x79F0;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</p>
+<pre><code>pie.sort(function(a, b) { return a.name.localeCompare(b.name); });
+</code></pre><p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; compare&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x7684;&#x6BD4;&#x8F83;&#x5668;&#x4E3A; compare&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; compare&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; null&#x3002;</p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;))</p>
+<p><strong>&#x6CE8;</strong>: &#x6392;&#x5E8F;&#x5E76;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x751F;&#x6210;&#x7684;&#x5F27;&#x6BB5;&#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x4ECD;&#x7136;&#x4E0E;&#x4F20;&#x5165;&#x7684; data &#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;&#x6392;&#x5E8F;&#x4EC5;&#x4EC5;&#x5F71;&#x54CD;&#x6BCF;&#x4E2A;&#x5F27;&#x6BB5;&#x7684;&#x7D22;&#x5F15;(index)&#xFF0C;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;(startAngle)&#x548C;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;(endAngle)</p>
+<h4 id="piesortvalues--function"><a name="piesortvalues--function" class="plugin-anchor" href="#piesortvalues--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.sortValues | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [compare]&#xFF0C;&#x5F62;&#x5F0F;&#x4E3A; <code>function(a, b) {}</code>&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x6570;&#x5B57;&#x3002;&#x5176;&#x4E2D; a &#x548C; b &#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x503C;&#x8BBF;&#x95EE;&#x5668;<code>*pie*.value</code>&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E00;&#x81F4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x5982;&#x679C; a &#x8981;&#x5728; b &#x524D;&#x9762;&#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x8981;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5C0F;&#x4E8E; 0 &#x7684;&#x6570;&#x5B57;&#xFF1B;&#x5982;&#x679C; a &#x8981;&#x5728; b &#x540E;&#x9762;&#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x8981;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5927;&#x4E8E; 0 &#x7684;&#x6570;&#x5B57;&#xFF1B;&#x5982;&#x679C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; 0&#xFF0C;&#x5219;&#x65E0;&#x6240;&#x8C13; a &#x548C; b &#x7684;&#x987A;&#x5E8F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6839;&#x636E; value &#x503C;&#x8FDB;&#x884C;&#x5347;&#x5E8F;&#x6392;&#x5E8F;</p>
+<pre><code>pie.sortValues(function(a, b) { return a - b; });
+</code></pre><p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6;&#x503C;&#x6BD4;&#x8F83;&#x5668;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; compare&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x503C;&#x6BD4;&#x8F83;&#x5668;&#x4E3A; compare&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; compare&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x503C;&#x6BD4;&#x8F83;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x964D;&#x5E8F;&#xFF0C;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4E3A;</p>
+<pre><code>function compare(a, b) {
+  return b - a;
+}
+</code></pre><p>&#x5982;&#x679C;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;&#x548C;&#x503C;&#x6BD4;&#x8F83;&#x5668;&#x90FD;&#x4E3A; null&#xFF0C;&#x90A3;&#x4E48;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x53CA;&#x5176;&#x7D22;&#x5F15;&#x7684;&#x987A;&#x5E8F;&#x90FD;&#x4E0E;&#x4F20;&#x5165;&#x7684; data &#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x5E76;&#x4E14;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x548C;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x90FD;&#x662F;&#x4ECE;&#x7D22;&#x5F15;&#x4E3A; 0 &#x7684;&#x4F4D;&#x7F6E;&#x4F9D;&#x6B21;&#x53E0;&#x52A0;&#x7684;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x7D22;&#x5F15;&#x987A;&#x5E8F;&#x4F18;&#x5148;&#x6839;&#x636E;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x5F53;&#x7ED9;&#x503C;&#x6BD4;&#x8F83;&#x5668;&#x8D4B;&#x503C;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;&#x7F6E;&#x4E3A; null</p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x5668;))</p>
+<p><strong>&#x6CE8;</strong>: &#x6392;&#x5E8F;&#x5E76;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x751F;&#x6210;&#x7684;&#x5F27;&#x6BB5;&#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x6570;&#x7EC4;&#x987A;&#x5E8F;&#x4ECD;&#x7136;&#x4E0E;&#x4F20;&#x5165;&#x7684; data &#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;&#x6392;&#x5E8F;&#x4EC5;&#x4EC5;&#x5F71;&#x54CD;&#x6BCF;&#x4E2A;&#x5F27;&#x6BB5;&#x7684;&#x7D22;&#x5F15;(index)&#xFF0C;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;(startAngle)&#x548C;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;(endAngle)</p>
+<h4 id="piestartangle--function"><a name="piestartangle--function" class="plugin-anchor" href="#piestartangle--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.startAngle | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [angle]&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;: <code>Number</code>&#x6216;<code>Function</code></p>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6; pie &#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;(&#x8FD9;&#x91CC;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x6307;&#x7684;&#x662F; pie &#x603B;&#x4F53;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x5F27;&#x5F62;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;)&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; angle&#xFF0C;&#x5219;&#x8BBE;&#x7F6E; pie &#x7684;&#x603B;&#x4F53;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#x4E3A; angle&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; angle&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;</p>
+<pre><code>function startAngle() {
+  return 0;
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x5F00;&#x59CB;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;))</p>
+<h4 id="pieendangle--function"><a name="pieendangle--function" class="plugin-anchor" href="#pieendangle--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.endAngle | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [angle]&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;: <code>Number</code>&#x6216;<code>Function</code></p>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6; pie &#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;(&#x8FD9;&#x91CC;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x6307;&#x7684;&#x662F; pie &#x603B;&#x4F53;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5F27;&#x5F62;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;)&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; angle&#xFF0C;&#x5219;&#x8BBE;&#x7F6E; pie &#x7684;&#x603B;&#x4F53;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#x4E3A; angle&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; angle&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;</p>
+<pre><code>function endAngle() {
+  return 2 * Math.PI;
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x7ED3;&#x675F;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;))</p>
+<h4 id="piepadangle--function"><a name="piepadangle--function" class="plugin-anchor" href="#piepadangle--function"><i class="fa fa-link" aria-hidden="true"></i></a><em>pie</em>.padAngle | Function</h4>
+<p><strong>&#x5165;&#x53C2;</strong>: [angle]&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;: <code>Number</code>&#x6216;<code>Function</code></p>
+<p><strong>&#x63CF;&#x8FF0;</strong>: &#x8BBE;&#x7F6E;&#x6216;&#x83B7;&#x53D6; pie &#x7684;&#x95F4;&#x9694;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86; angle&#xFF0C;&#x5219;&#x8BBE;&#x7F6E;&#x95F4;&#x9694;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#x4E3A; angle&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE; pie &#x751F;&#x6210;&#x5668;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6307;&#x5B9A; angle&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684;&#x95F4;&#x9694;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;</p>
+<pre><code>function padAngle() {
+  return 0;
+}
+</code></pre><p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>: Function(&#x4F46;&#x662F;&#x6839;&#x636E;&#x6709;&#x65E0;&#x4F20;&#x53C2;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x610F;&#x4E49;&#x662F;&#x4E0D;&#x540C;&#x7684;(pie &#x751F;&#x6210;&#x5668;&#x6216;&#x95F4;&#x9694;&#x89D2;&#x5EA6;&#x8BBF;&#x95EE;&#x5668;))</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="arc.html#arccontext--function" class="navigation navigation-prev " aria-label="Previous page: arc.context">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pie.html#d3pie--function" class="navigation navigation-next " aria-label="Next page: d3.pie">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"d3-pie","level":"1.7.2","depth":2,"next":{"title":"d3.pie","level":"1.7.2.1","depth":3,"anchor":"#d3pie--function","path":"d3-shape/pie.md","ref":"d3-shape/pie.md#d3pie--function","articles":[]},"previous":{"title":"arc.context","level":"1.7.1.11","depth":3,"anchor":"#arccontext--function","path":"d3-shape/arc.md","ref":"d3-shape/arc.md#arccontext--function","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhuyali","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"d3-doc","language":"zh-cn","links":{},"gitbook":"*"},"file":{"path":"d3-shape/pie.md","mtime":"2017-11-13T08:43:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-13T10:00:04.899Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
