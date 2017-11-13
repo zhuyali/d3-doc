@@ -12,7 +12,7 @@
   "scripts": {
     "server": "gitbook serve",
     "build": "gitbook build",
-    "update": "gh-pages -d _book -b master"
+    "update": "npm run build && gh-pages -d _book -b master"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",

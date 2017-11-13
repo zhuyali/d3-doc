@@ -5,8 +5,17 @@
   "language": "zh-hans",
   "plugins" : [
     "anchors",
-    "expandable-chapters"
+    "expandable-chapters",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "github"
   ],
   "links": {
+  },
+  "pluginsConfig": {
+    "github": {
+        "url": "https://github.com/zhuyali"
+    }
   }
 }
