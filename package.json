@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "d3 doc",
   "keywords": [
-    "blog"
+    "d3"
   ],
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   "scripts": {
     "server": "gitbook serve",
     "build": "gitbook build",
-    "update": "npm run build && gh-pages -d _site -b master"
+    "update": "npm run build && gh-pages -d _book -b master"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",
