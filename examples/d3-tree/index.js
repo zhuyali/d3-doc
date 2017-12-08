@@ -12,12 +12,6 @@ var data = {
   }]
 };
 
-var svg = d3.select("svg");
-var width = +svg.attr("width");
-var height = +svg.attr("height");
-var root = d3.hierarchy(data);
-var maxHeight = 150;
-var layerDepth = Array(root.height + 1).fill(0);
 var traversal = function (root, layer, maxLayerDepth) {
   if (root.children) {
     root.children.forEach(function (child) {
@@ -27,9 +21,16 @@ var traversal = function (root, layer, maxLayerDepth) {
   }
   return maxLayerDepth;
 }
+
+var svg = d3.select("svg");
+var width = +svg.attr("width");
+var height = +svg.attr("height");
+var root = d3.hierarchy(data);
+var maxHeight = 150;
+var layerDepth = Array(root.height + 1).fill(0);
 var maxLayerDepth = traversal(root, 0, layerDepth);
 var imageHeight = height / (1.03 * Math.max(...maxLayerDepth)) > maxHeight ? maxHeight : height / (1.03 * Math.max(...maxLayerDepth));
-var tree = d3.tree().size([height, width - imageHeight - 10]);
+var tree = d3.tree().size([height, width - imageHeight - 100]);
 var g = svg.append("g");
 tree(root);
 
@@ -60,6 +61,15 @@ var renderTree = function (root) {
       return imageHeight;
     })
     .attr("transform", function (d) { return `translate(3, ${-imageHeight / 2})`; });
+
+  node.append('text')
+    .attr('fill', '#111')
+    .text(d => {
+      return d.data.text;
+    })
+    .attr("transform", d => {
+      return `translate(${imageHeight + 10}, 0)`;
+    })
 };
 
 var update = function () {
@@ -84,7 +94,9 @@ var update = function () {
     .attr("height", function (d) {
       return imageHeight;
     })
-    .attr("transform", function (d) { return `translate(3, ${-imageHeight / 2})`; });;
+    .attr("transform", function (d) { return `translate(3, ${-imageHeight / 2})`; });
+  transition.selectAll("text")
+    .attr("transform", function (d) { return `translate(${imageHeight + 10}, 0)`; });
 };
 
 document.querySelector('#append').addEventListener('click', () => {
